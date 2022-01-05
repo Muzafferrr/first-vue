@@ -1,9 +1,8 @@
 <template>
   <div>
-    <input type="text" :placeholder="inputHolder" v-on:change="changeInputCatch()" v-if="tryIt()">
-    <input type="text" :placeholder="eventInput" v-on:change="changeInput($event)" v-else>
+    <input type="text" :placeholder="inputHolder" v-on:change="changeInputCatch()">
+    <input type="text" :placeholder="eventInput" v-on:change="changeInput($event)">
     <input type="text" :maxlength="maxLength">
-    <input type="text" placeholder="input 1" v-show="see">
     <button v-on:click="buttonClick">Button</button>
   </div>
 </template>
@@ -15,8 +14,7 @@ export default {
     return {
       inputHolder: 'try it again',
       eventInput: 'write event value',
-      maxLength: 10,
-      see: true
+      maxLength: 10
     }
   },
   methods: {
@@ -28,9 +26,6 @@ export default {
     },
     buttonClick() {
       console.log('tıklandı')
-    },
-    tryIt() {
-      return this.see !== true;
     }
   }
 }
