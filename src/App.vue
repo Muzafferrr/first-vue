@@ -4,6 +4,7 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {}
@@ -13,6 +14,3 @@ export default {
   components: {}
 }
 </script>
-<style>
-
-</style>

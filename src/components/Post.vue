@@ -1,3 +1,4 @@
+<!-- Componentlerin isimleri büyük harfle başlamalıdır. -->
 <template>
   <div>
     <h2 v-for="(i, index) in content" :key="index">{{ i.number }} {{ i.content }}</h2>

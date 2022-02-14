@@ -1,13 +1,11 @@
-<!--App.vue Post component props gönderme kodları-->
-<!-- prop ile veri gönderirken ana componentten alt componente veri gönderilir-->
 <template>
   <div>
-    <post :content="content"/>
+    <post-for-loop v-for="(item,index) in content" :key="index" :item="item" :value="value"/>
   </div>
 </template>
 
 <script>
-import Post from "@/components/Post";
+import PostForLoop from "@/components/PostForLoop";
 
 export default {
   data() {
@@ -17,13 +15,14 @@ export default {
         {number: 2, content: 'two'},
         {number: 3, content: 'three'},
         {number: 4, content: 'four'},
-      ]
+      ],
+      value: '<h1>Value</h1>'
     }
   },
   methods: {},
   computed: {},
   components: {
-    Post
+    PostForLoop
   }
 }
 </script>
