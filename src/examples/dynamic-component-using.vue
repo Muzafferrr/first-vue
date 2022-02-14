@@ -6,7 +6,10 @@
 </template>
 
 <script>
-import globalComponents from "@/globalComponents";
+import One from "@/components/One";
+import Two from "@/components/Two";
+import Three from "@/components/Three";
+
 export default {
   data() {
     return {
@@ -17,7 +20,9 @@ export default {
   methods: {},
   computed: {},
   components: {
-    ...globalComponents
+    "first": One,
+    "second": Two,
+    "third": Three
   }
 }
 </script>

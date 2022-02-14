@@ -7,6 +7,7 @@
 
 <script>
 import globalComponents from "@/globalComponents";
+
 export default {
   data() {
     return {
