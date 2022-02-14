@@ -4,7 +4,6 @@
 </template>
 
 <script>
-import globalComponents from "@/globalComponents";
 export default {
   data() {
     return {}
@@ -12,7 +11,6 @@ export default {
   methods: {},
   computed: {},
   components: {
-    ...globalComponents
   }
 }
 </script>
