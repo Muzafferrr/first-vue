@@ -4,14 +4,15 @@
 </template>
 
 <script>
-
 export default {
   data() {
-    return {
-    }
+    return {}
   },
   methods: {},
   computed: {},
+  watch:{},
   components: {}
 }
 </script>
+<style>
+</style>
